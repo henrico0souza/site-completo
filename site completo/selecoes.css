@@ -1,0 +1,146 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CORPO DA PÁGINA */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #001F54, #0047D9);
+    min-height:100vh;
+}
+
+/* CABEÇALHO */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 60px;
+}
+
+/* TÍTULO */
+.logo h1{
+    color:white;
+    font-size:50px;
+}
+
+/* MENU */
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d9ff;
+}
+
+/* ÁREA DOS CARDS */
+.selecoes{
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+
+    gap:30px;
+}
+
+/* CARD */
+.card-selecao{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.card-selecao:hover{
+    transform:translateY(-10px);
+}
+
+/* BANDEIRAS */
+.card-selecao img{
+    width:130px;
+    height:85px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:2px solid #ddd;
+
+    margin-bottom:20px;
+}
+
+/* NOME DA SELEÇÃO */
+.card-selecao h2{
+    color:#003399;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+/* INFORMAÇÕES */
+.card-selecao p{
+    font-size:18px;
+    color:#333;
+    margin:10px 0;
+}
+
+.card-selecao strong{
+    color:black;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .logo h1{
+        font-size:35px;
+        text-align:center;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo h1{
+        font-size:28px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+    .card-selecao h2{
+        font-size:24px;
+    }
+
+    .card-selecao p{
+        font-size:16px;
+    }
+
+}
