@@ -144,3 +144,66 @@ nav a:hover{
     }
 
 }
+.botao-site{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+
+    background:linear-gradient(45deg,#001f5c,#0059ff);
+
+    color:white;
+    text-decoration:none;
+
+    font-size:18px;
+    font-weight:bold;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.botao-site:hover{
+
+    background:linear-gradient(45deg,#00c3ff,#0066ff);
+
+    transform:
+    translateY(-8px)
+    scale(1.05);
+
+    box-shadow:
+    0 0 15px #00c3ff,
+    0 0 30px #00c3ff,
+    0 0 50px #00c3ff;
+
+}
+
+.botao-site:active{
+    transform:scale(.95);
+}
+.card-selecao{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    transition:.4s;
+}
+
+.card-selecao:hover{
+
+    transform:
+    translateY(-15px);
+
+    box-shadow:
+    0 0 20px #00bfff,
+    0 0 40px #00bfff;
+
+}
